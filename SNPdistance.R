@@ -30,6 +30,7 @@ SNPdistance <-function(input, missing.threshold = 80, includeHet=FALSE){
       num <- num + 1L
     }
   }
+  res
   write.csv(res,paste0(unlist(strsplit(input, split='.fasta', fixed=TRUE))[1],"_SNPdistance.csv"),row.names = F)
 }
 
